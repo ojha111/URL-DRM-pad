@@ -8,8 +8,8 @@
     "repository": "",
     "env": {
       "BOT_TOKEN": {
-        "description": "6418802023:AAGBpFtOihuv5ffaVF_l7GqkxrrMOAGD0cA",
-        "value": ""
+        "description": "7289136166:AAGdeapgGCa5ZT4xKXb4dcbUOJsBvpyh43U",
+        "value": "7289136166:AAGdeapgGCa5ZT4xKXb4dcbUOJsBvpyh43U"
       },
       "API_ID": {
         "description": "20346550",
@@ -35,8 +35,8 @@
         "required": true
       },
       "LOG_CHANNEL": {
-        "description": "-1002163136973",
-        "value": "-1001529584600"
+        "description": "-1002278731669",
+        "value": "-1002278731669"
       }
     },
     "addons": [],
