@@ -30,13 +30,13 @@
         "required": false
       },
       "DATABASE_URL": {
-        "description": "mongodb+srv://mewadonlinestudy:yYjxKiZGQag8DnWH@cpvod.ywpecvo.mongodb.net/?retryWrites=true&w=majority&appName=cpvod",
-        "value": "mongodb+srv://mewadonlinestudy:yYjxKiZGQag8DnWH@cpvod.ywpecvo.mongodb.net/?retryWrites=true&w=majority&appName=cpvodak",
+        "description": "mongodb+srv://MRDAXX:MRDAXX@mrdaxx.prky3aj.mongodb.net/?retryWrites=true&w=majority",
+        "value": "mongodb+srv://MRDAXX:MRDAXX@mrdaxx.prky3aj.mongodb.net/?retryWrites=true&w=majority",
         "required": true
       },
       "LOG_CHANNEL": {
-        "description": "-1002278731669",
-        "value": "-1002278731669"
+        "description": "-1002217791868",
+        "value": "-1002217791868"
       }
     },
     "addons": [],
