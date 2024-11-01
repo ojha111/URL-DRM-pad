@@ -75,7 +75,7 @@ Let's bot up and have some fun! 🤘"""
 
 Original Index: {orginal_start_index}/{orginal_end_index}
 
-[𝄟⃝🐬🇵ʀɪʏᴀ𝄟⃝🐬](https://t.me/Reason_Someone)"""
+[Caption Alex ❤️](https://t.me/Alex_Aditya9)"""
 
     DEFAULT_CAPTION = """[📁] File_ID : {file_index}
 
@@ -85,7 +85,7 @@ Original Index: {orginal_start_index}/{orginal_end_index}
 
 📚 Bᴀᴛᴄʜ Nᴀᴍᴇ : {batch_name}
 
-Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ : [𝄟⃝🐬🇵ʀɪʏᴀ𝄟⃝🐬](https://t.me/ReaSon_SomeOne_Bot)"""
+Dᴏᴡɴʟᴏᴀᴅᴇᴅ Bʏ : [Caption Alex ❤️](https://t.me/Alex_Aditya9)"""
 
 
     CAPTION_CB = """**Set Caption
