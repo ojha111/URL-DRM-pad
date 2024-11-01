@@ -20,7 +20,7 @@ class Config(object):
     API_ID = int(os.environ.get("20346550"))
     API_HASH = os.environ.get("bc79c3bea7a626887bdc0871eecf0327")
     BOT_TOKEN = os.environ.get("7289136166:AAGdeapgGCa5ZT4xKXb4dcbUOJsBvpyh43U")
-    DATABASE_NAME = os.environ.get("DATABASE_NAME", "tg_bot")
+    DATABASE_NAME = os.environ.get("mewadonlinestudys", "tg_bot")
     DATABASE_URL = os.environ.get("mongodb+srv://daxxop:daxxop@daxxop.dg3umlc.mongodb.net/?retryWrites=true&w=majority", None)
     OWNER_ID = int(os.environ.get("7081036509"))
     LOG_CHANNEL = int(os.environ.get("-1002217791868", "0"))
@@ -36,7 +36,7 @@ class Script(object):
     START_MESSAGE = (
         " {mention}\n\nSend any link or set of links in a txt file to download them."
     )
-    DEV_MESSAGE = """👋 Hey there, I'm 𝄟⃝🐬 Caption Alex ❤️𝄟⃝🐬 – your go-to Telegram bot developer!
+    DEV_MESSAGE = """👋 Hey there, I'm  Caption Alex ❤️ – your go-to Telegram bot developer!
 
 🤖 Love having bots that do the heavy lifting for you? That's my jam! I'm all about crafting super cool and custom Telegram bots that make your life a breeze.
 
