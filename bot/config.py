@@ -36,7 +36,7 @@ class Script(object):
     START_MESSAGE = (
         " {mention}\n\nSend any link or set of links in a txt file to download them."
     )
-    DEV_MESSAGE = """👋 Hey there, I'm 𝄟⃝🐬🇵ʀɪʏᴀ𝄟⃝🐬 – your go-to Telegram bot developer!
+    DEV_MESSAGE = """👋 Hey there, I'm Caption Alex ❤️– your go-to Telegram bot developer!
 
 🤖 Love having bots that do the heavy lifting for you? That's my jam! I'm all about crafting super cool and custom Telegram bots that make your life a breeze.
 
@@ -47,7 +47,7 @@ class Script(object):
 - **Chill Vibes:** I keep your data super safe, so you can relax and enjoy the bot party.
 - **Always Improving:** Telegram evolves, and my bots grow with it. I'm here to keep things fresh and fab.
 
-Ready for your own bot buddy? Ping me on [Telegram](https://telegram.me/Reason_Someone) or check out me on [GitHub](https://github.com/The_real_xTaR). Wanna hire me? Find me on [Fiverr](https://www.fiverr.com/The_real_xTaR)!
+Ready for your own bot buddy? Ping me on [Telegram](https://telegram.me/Alex_Aditya9) or check out me on [GitHub](https://github.com/The_real_xTaR). Wanna hire me? Find me on [Fiverr](https://www.fiverr.com/The_real_xTaR)!
 
 Let's bot up and have some fun! 🤘"""
     HELP_MESSAGE = os.environ.get("HELP_MESSAGE", "Help message")
