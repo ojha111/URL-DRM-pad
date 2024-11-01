@@ -25,8 +25,8 @@
         "required": true
       },
       "DATABASE_NAME": {
-        "description": "mewadonlinestudys",
-        "value": "mewadonlinestudys",
+        "description": "drmbot",
+        "value": "drmbot",
         "required": false
       },
       "DATABASE_URL": {
