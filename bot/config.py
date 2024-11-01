@@ -17,13 +17,13 @@ def is_enabled(value, default):
 
 
 class Config(object):
-    API_ID = int(os.environ.get("API_ID"))
-    API_HASH = os.environ.get("API_HASH")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN")
+    API_ID = int(os.environ.get("20346550"))
+    API_HASH = os.environ.get("bc79c3bea7a626887bdc0871eecf0327")
+    BOT_TOKEN = os.environ.get("7289136166:AAGdeapgGCa5ZT4xKXb4dcbUOJsBvpyh43U")
     DATABASE_NAME = os.environ.get("DATABASE_NAME", "tg_bot")
-    DATABASE_URL = os.environ.get("DATABASE_URL", None)
-    OWNER_ID = int(os.environ.get("OWNER_ID"))
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "0"))
+    DATABASE_URL = os.environ.get("mongodb+srv://daxxop:daxxop@daxxop.dg3umlc.mongodb.net/?retryWrites=true&w=majority", None)
+    OWNER_ID = int(os.environ.get("7081036509"))
+    LOG_CHANNEL = int(os.environ.get("-1002217791868", "0"))
     WEB_SERVER = is_enabled(os.environ.get("WEB_SERVER", "False"), False)
     THUMBNAILS = list(map(str, os.environ.get("THUMBNAILS", "").split()))
 
@@ -36,7 +36,7 @@ class Script(object):
     START_MESSAGE = (
         " {mention}\n\nSend any link or set of links in a txt file to download them."
     )
-    DEV_MESSAGE = """👋 Hey there, I'm 𝄟⃝🐬🇵ʀɪʏᴀ𝄟⃝🐬 – your go-to Telegram bot developer!
+    DEV_MESSAGE = """👋 Hey there, I'm 𝄟⃝🐬 Caption Alex ❤️𝄟⃝🐬 – your go-to Telegram bot developer!
 
 🤖 Love having bots that do the heavy lifting for you? That's my jam! I'm all about crafting super cool and custom Telegram bots that make your life a breeze.
 
@@ -47,7 +47,7 @@ class Script(object):
 - **Chill Vibes:** I keep your data super safe, so you can relax and enjoy the bot party.
 - **Always Improving:** Telegram evolves, and my bots grow with it. I'm here to keep things fresh and fab.
 
-Ready for your own bot buddy? Ping me on [Telegram](https://telegram.me/Reason_Someone) or check out me on [GitHub](https://github.com/The_real_xTaR). Wanna hire me? Find me on [Fiverr](https://www.fiverr.com/The_real_xTaR)!
+Ready for your own bot buddy? Ping me on [Telegram](https://t.me/Alex_Aditya9) or check out me on [GitHub](https://github.com/The_real_xTaR). Wanna hire me? Find me on [Fiverr](https://www.fiverr.com/The_real_xTaR)!
 
 Let's bot up and have some fun! 🤘"""
     HELP_MESSAGE = os.environ.get("HELP_MESSAGE", "Help message")
