@@ -343,14 +343,57 @@ async def format_url(url: str, quality: str = "1"):
             params=params,
         )
         url = response.json()["url"]
-        
-    elif "appx1.arvind.eu.org" in url:
-        if quality == "1":
-            url = url.replace("main.m3u8", "720p.m3u8")
-        elif quality == "2":
-            url = url.replace("main.m3u8", "480p.m3u8")
-        elif quality == "3":
-            url = url.replace("main.m3u8", "360p.m3u8")
+       
+def handle_appx1_url(url, quality="1"):
+    # Replace main.m3u8 with desired quality
+    if quality == "1":
+        url = url.replace("main.m3u8", "720p.m3u8")
+    elif quality == "2":
+        url = url.replace("main.m3u8", "480p.m3u8")
+    elif quality == "3":
+        url = url.replace("main.m3u8", "360p.m3u8")
+    return url
+
+def handle_cloudfront_url(url):
+    """
+    Sample Link: https://d1d34p8vz63oiq.cloudfront.net/8eca5705-a305-4c1d-863f-a5b101c1983a/master.m3u8
+    """
+    print("Checking CloudFront URL:", url)
+    response = requests.get(url)
+
+    # If the initial URL doesn't work, try an alternative link
+    if response.status_code != 200:
+        fallback_link = (
+            f'https://d3nzo6itypaz07.cloudfront.net/{url.split("/")[-2]}/master.m3u8'
+        )
+        print("Trying fallback link:", fallback_link)
+        fallback_response = requests.get(fallback_link)
+        if fallback_response.status_code == 200:
+            return fallback_link
+        else:
+            print("Both links failed.")
+            return None
+    return url
+
+def download_video(url, name, quality="best"):
+    # Handle different URL types
+    if "appx1.arvind.eu.org" in url:
+        url = handle_appx1_url(url, quality)
+    elif url.startswith("https://d1d34p8vz63oiq.cloudfront.net/"):
+        url = handle_cloudfront_url(url)
+
+    if url:
+        cmd = f'yt-dlp "{url}" -o "{name}.mp4" -N 200'
+        print("Executing:", cmd)
+        os.system(cmd)
+    else:
+        print("Failed to get a valid video URL.")
+
+# Example Usage
+url = "VIDEO_URL_HERE"
+name = "video_download"
+quality = "1"  # "1" for 720p, "2" for 480p, "3" for 360p
+download_video(url, name, quality)
 
     elif url.startswith("https://d1d34p8vz63oiq.cloudfront.net/") or url.startswith(
         "https://d1d34p8vz63oiq.cloudfront.net/"
