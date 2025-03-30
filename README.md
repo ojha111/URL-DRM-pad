@@ -1,4 +1,4 @@
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy/?template=https://github.com/ojha111/My-DRM-Uploader-)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy/?template=https://github.com/ojha111/URL-DRM-pad/tree/main)
 
 
 # Deploying a Python Script with Requirements and Additional Tools
